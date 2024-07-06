@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSONPlaceholder API Interaction</title>
+    <!-- Bootstrap CSS for styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS for additional styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>JSONPlaceholder API Interaction</h1>
+
+        <button onclick="getAllPosts()" class="btn btn-primary mb-2">Get All Posts</button>
+        <button onclick="getPostById()" class="btn btn-primary mb-2">Get Post with ID 10</button>
+        <button onclick="createNewPost()" class="btn btn-primary mb-2">Create New Post</button>
+        <button onclick="replacePost()" class="btn btn-primary mb-2">Replace Post with ID 12</button>
+        <button onclick="updatePostTitle()" class="btn btn-primary mb-2">Update Post Title for ID 12</button>
+        <button onclick="deletePost()" class="btn btn-danger mb-2">Delete Post with ID 12</button>
+
+        <div id="result-container" class="mt-3"></div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies for Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Your custom JavaScript file -->
+    <script src="index.js"></script>
+</body>
+</html>
